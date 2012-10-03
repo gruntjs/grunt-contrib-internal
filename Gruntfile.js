@@ -1,6 +1,6 @@
 /*
  * grunt-contrib-internal
- * https://gruntjs.com/
+ * http://gruntjs.com/
  *
  * Copyright (c) 2012 Tyler Kellen, contributors
  * Licensed under the MIT license.
@@ -39,7 +39,7 @@ module.exports = function(grunt) {
   // Actually load this plugin's task(s).
   grunt.loadTasks('tasks');
 
-  // By default, lint and run all tests.
-  grunt.registerTask('default', ['jshint']);
+  // By default, lint task.
+  grunt.registerTask('default', 'jshint');
 
 };
