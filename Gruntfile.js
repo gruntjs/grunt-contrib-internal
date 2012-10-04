@@ -16,30 +16,20 @@ module.exports = function(grunt) {
       all: [
         'Gruntfile.js',
         'tasks/*.js',
-        '<config:nodeunit.tests>'
       ],
       options: {
-        curly: true,
-        eqeqeq: true,
-        immed: true,
-        latedef: true,
-        newcap: true,
-        noarg: true,
-        sub: true,
-        undef: true,
-        boss: true,
-        eqnull: true,
-        node: true,
-        es5: true
+        jshintrc: '.jshintrc'
       }
     }
-
   });
 
   // Actually load this plugin's task(s).
   grunt.loadTasks('tasks');
 
+  // These plugins provide necessary tasks.
+  grunt.loadNpmTasks('grunt-contrib-jshint');
+
   // By default, lint task.
-  grunt.registerTask('default', 'jshint');
+  grunt.registerTask('default', ['jshint', 'build-contrib']);
 
 };
