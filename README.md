@@ -29,4 +29,4 @@ If the plugin has been installed correctly, running `grunt --help` at the comman
 
 ## Release History
 
- * 2012-10-02 - v0.1.0 - Work in progress.
+ * 2012-10-02 - v0.1.0 - Work in progress, not yet officially released.
