@@ -11,19 +11,17 @@
 module.exports = function(grunt) {
 
   grunt.registerTask('build-contrib', 'Generate contrib plugin files.', function() {
-    var asset = require('path').join.bind(null, __dirname);
+    var path = require('path');
+    var asset = path.join.bind(null, __dirname);
 
     var meta = grunt.file.readJSON('package.json');
     meta.changelog = grunt.file.readYAML('CHANGELOG');
-    meta.task_name = meta.name.replace(/^grunt-contrib-/, '');
 
-    // Read docs.
+    // Read task docs.
     meta.docs = {};
-    ['examples', 'options', 'overview'].forEach(function(name) {
-      var filepath = 'docs/' + name + '.md';
-      if (grunt.file.exists(filepath)) {
-        meta.docs[name] = grunt.file.read('docs/' + name + '.md');
-      }
+    grunt.file.expand('docs/*.md').forEach(function(filepath) {
+      var taskName = path.basename(filepath, '.md');
+      meta.docs[taskName] = grunt.file.read(filepath);
     });
 
     // Generate readme.
