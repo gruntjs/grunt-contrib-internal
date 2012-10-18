@@ -40,7 +40,7 @@ module.exports = function(grunt) {
       // Read doc file.
       var doc = grunt.file.read(filepath);
       // Adjust header level to be semantically correct for the readme.
-      doc = doc.replace(/^#/gm, '###');
+      doc = doc.replace(/^# /gm, '### ');
       meta.docs[taskname][section] = doc;
     });
 
