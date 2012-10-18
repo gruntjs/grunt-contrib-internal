@@ -28,9 +28,10 @@ If the plugin has been installed correctly, running `grunt --help` at the comman
 {% _.each(docs, function(doc, name) { %}
 ## The {%= name %} task
 
-{%= doc %}
+{%= doc.overview || '' %}
+{%= doc.options || '' %}
+{%= doc.examples || '' %}
 {% }); %}
-
 ## Release History
 {% if (changelog) {
   _.each(changelog, function(details, version) {
@@ -43,3 +44,6 @@ If the plugin has been installed correctly, running `grunt --help` at the comman
 } else { %}
 _(Nothing yet)_
 {% } %}
+
+--
+Task submitted by <a href="{%= authors[0].url %}">{%= authors[0].name %}</a>.

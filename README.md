@@ -26,7 +26,16 @@ If the plugin has been installed correctly, running `grunt --help` at the comman
 [package.json]: https://npmjs.org/doc/json.html
 
 
+## The build-contrib task
+
+_This plugin is used internally by grunt-contrib plugins, and shouldn't be used externally._
+
+
+
 
 ## Release History
 
  * 2012-10-02 - v0.1.0 - Work in progress, not yet officially released.
+
+--
+Task submitted by <a href="http://benalman.com/">"Cowboy" Ben Alman</a>.
