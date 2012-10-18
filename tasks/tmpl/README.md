@@ -47,3 +47,5 @@ _(Nothing yet)_
 
 --
 Task submitted by <a href="{%= authors[0].url %}">{%= authors[0].name %}</a>.
+
+*Generated on {%= grunt.template.today() %}*
