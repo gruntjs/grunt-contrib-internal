@@ -17,6 +17,8 @@ module.exports = function(grunt) {
     var meta = grunt.file.readJSON('package.json');
     meta.changelog = grunt.file.readYAML('CHANGELOG');
 
+    meta.travis = grunt.file.exists('.travis.yml');
+
     var authors = grunt.file.read('AUTHORS');
     meta.authors = authors.split('\n').map(function(author) {
       var matches = author.match(/(.*?)\s*\((.*)\)/) || [];

@@ -1,4 +1,4 @@
-# grunt-contrib-internal [![Build Status](https://secure.travis-ci.org/gruntjs/grunt-contrib-internal.png?branch=master)](http://travis-ci.org/gruntjs/grunt-contrib-internal)
+# grunt-contrib-internal
 
 > Internal tasks for managing the grunt-contrib project.
 
