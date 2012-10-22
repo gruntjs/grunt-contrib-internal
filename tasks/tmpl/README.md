@@ -9,7 +9,7 @@ _If you haven't used [grunt][] before, be sure to check out the [Getting Started
 
 From the same directory as your project's [Gruntfile][Getting Started] and [package.json][], install this plugin with the following command:
 
-```bash
+```shell
 npm install {%= name %} --save-dev
 ```
 
@@ -45,7 +45,8 @@ If the plugin has been installed correctly, running `grunt --help` at the comman
 _(Nothing yet)_
 {% } %}
 
---
-Task submitted by <a href="{%= authors[0].url %}">{%= authors[0].name %}</a>.
+---
 
-*Generated on {%= grunt.template.today() %}.*
+Task submitted by [{%= authors[0].name %}]({%= authors[0].url %})
+
+*Generated on {%= grunt.template.today() %}*
