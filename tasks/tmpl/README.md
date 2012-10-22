@@ -39,7 +39,7 @@ If the plugin has been installed correctly, running `grunt --help` at the comman
       grunt.template.date(details.date, 'yyyy-mm-dd'),
       version,
       details.changes.join(' '),
-    ].join(' - '));
+    ].join('\u2003\u2003\u2003'));
   });
 } else { %}
 _(Nothing yet)_
