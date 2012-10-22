@@ -26,7 +26,7 @@ If the plugin has been installed correctly, running `grunt --help` at the comman
 [package.json]: https://npmjs.org/doc/json.html
 
 {% _.each(docs, function(doc, name) { %}
-## The {%= name %} task
+## {%= _.capitalize(name) %} task
 
 {%= doc.overview || '' %}
 {%= doc.options || '' %}
