@@ -12,7 +12,7 @@ module.exports = function(grunt) {
 
   grunt.registerTask('build-contrib', 'Generate contrib plugin files.', function() {
     var path = require('path');
-    var asset = path.join.bind(null, __dirname);
+    var asset = path.join.bind(null, __dirname, 'assets');
 
     var meta = grunt.file.readJSON('package.json');
     meta.changelog = grunt.file.readYAML('CHANGELOG');
@@ -24,6 +24,12 @@ module.exports = function(grunt) {
       var matches = author.match(/(.*?)\s*\((.*)\)/) || [];
       return {name: matches[1], url: matches[2]};
     });
+
+    // Used to display the "in development" warning message @ the top.
+    meta.in_development = (meta.keywords || []).indexOf('gruntplugin') === -1 || '';
+
+    // Commonly (?) used strings.
+    meta.s = grunt.file.readYAML(asset('strings.yml'));
 
     // Read task docs.
     meta.docs = {};
@@ -41,11 +47,13 @@ module.exports = function(grunt) {
       var doc = grunt.file.read(filepath);
       // Adjust header level to be semantically correct for the readme.
       doc = doc.replace(/^#/gm, '###');
+      // Process as template.
+      doc = grunt.template.process(doc, {data: meta, delimiters: 'init'});
       meta.docs[taskname][section] = doc;
     });
 
     // Generate readme.
-    grunt.file.copy(asset('tmpl/README.md'), 'README.md', {
+    grunt.file.copy(asset('README.tmpl.md'), 'README.md', {
       process: function(tmpl) {
         return grunt.template.process(tmpl, {data: meta, delimiters: 'init'});
       }
