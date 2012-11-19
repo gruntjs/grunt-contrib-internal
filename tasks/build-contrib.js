@@ -53,12 +53,18 @@ module.exports = function(grunt) {
     });
 
     // Generate readme.
-    grunt.file.copy(asset('README.tmpl.md'), 'README.md', {
-      process: function(tmpl) {
-        return grunt.template.process(tmpl, {data: meta, delimiters: 'init'});
-      }
-    });
-    grunt.log.ok('Created README.md');
+    var tmpl = grunt.file.read(asset('README.tmpl.md'));
+    var newReadme = grunt.template.process(tmpl, {data: meta, delimiters: 'init'});
+
+    // Only write readme if it actually changed.
+    var oldReadme = grunt.file.exists('README.md') ? grunt.file.read('README.md') : '';
+    var re = /(\*This file was generated on.*)/;
+    if (oldReadme.replace(re, '') !== newReadme.replace(re, '')) {
+      grunt.file.write('README.md', newReadme);
+      grunt.log.ok('Created README.md');
+    } else {
+      grunt.log.ok('Keeping README.md.');
+    }
 
     // Copy contributing guide from grunt.
     grunt.file.copy('node_modules/grunt/CONTRIBUTING.md', 'CONTRIBUTING.md');
