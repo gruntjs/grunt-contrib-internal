@@ -10,6 +10,15 @@
 
 module.exports = function(grunt) {
 
+  // Warn when properties have been removed.
+  function warn(obj, prop, fn) {
+    Object.defineProperty(obj, prop, {
+      get: function() {
+        grunt.log.errorlns(fn ? fn() : 'The "' + prop + '" property has been removed.');
+      }
+    });
+  }
+
   grunt.registerTask('build-contrib', 'Generate contrib plugin files.', function() {
     var path = require('path');
     var asset = path.join.bind(null, __dirname, 'assets');
@@ -30,6 +39,9 @@ module.exports = function(grunt) {
 
     // Commonly (?) used strings.
     meta.s = grunt.file.readYAML(asset('strings.yml'));
+    warn(meta.s, 'multi_task_options', function() {
+      return 'Note: s.multi_task_options (options) has been removed in favor of the more general s.multi_task (overview).';
+    });
 
     // Read task docs.
     meta.docs = {};
@@ -69,6 +81,9 @@ module.exports = function(grunt) {
     // Copy contributing guide from grunt.
     grunt.file.copy('node_modules/grunt/CONTRIBUTING.md', 'CONTRIBUTING.md');
     grunt.log.ok('Created CONTRIBUTING.md');
+
+    // Fail task if any errors were logged.
+    if (this.errorCount > 0) { return false; }
   });
 
 };
