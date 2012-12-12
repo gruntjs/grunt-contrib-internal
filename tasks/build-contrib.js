@@ -19,6 +19,9 @@ module.exports = function(grunt) {
     });
   }
 
+  // Add custom template delimiters.
+  grunt.template.addDelimiters('build-contrib', '{%', '%}');
+
   grunt.registerTask('build-contrib', 'Generate contrib plugin files.', function() {
     var path = require('path');
     var asset = path.join.bind(null, __dirname, 'assets');
@@ -60,13 +63,13 @@ module.exports = function(grunt) {
       // Adjust header level to be semantically correct for the readme.
       doc = doc.replace(/^#/gm, '###');
       // Process as template.
-      doc = grunt.template.process(doc, {data: meta, delimiters: 'init'});
+      doc = grunt.template.process(doc, {data: meta, delimiters: 'build-contrib'});
       meta.docs[taskname][section] = doc;
     });
 
     // Generate readme.
     var tmpl = grunt.file.read(asset('README.tmpl.md'));
-    var newReadme = grunt.template.process(tmpl, {data: meta, delimiters: 'init'});
+    var newReadme = grunt.template.process(tmpl, {data: meta, delimiters: 'build-contrib'});
 
     // Only write readme if it actually changed.
     var oldReadme = grunt.file.exists('README.md') ? grunt.file.read('README.md') : '';
