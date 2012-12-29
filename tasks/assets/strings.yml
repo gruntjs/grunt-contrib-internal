@@ -1,5 +1,5 @@
 in_development: |
-  _Note that this plugin has not yet been released, and only works with the latest bleeding-edge, in-development version of grunt. See the [When will I be able to use in-development feature 'X'?](https://github.com/gruntjs/grunt/blob/devel/docs/faq.md#when-will-i-be-able-to-use-in-development-feature-x) FAQ entry for more information._
+  _Note that this plugin has not yet been released, and only works with the latest bleeding-edge, in-development version of grunt. See the [When will I be able to use in-development feature 'X'?](https://github.com/gruntjs/grunt/wiki/Frequently-Asked-Questions#faq-devel) FAQ entry for more information._
 multi_task: |
   _This task is a [multi task][] so any targets, files and options should be specified according to the [multi task][] documentation._
   [multi task]: https://github.com/gruntjs/grunt/wiki/Configuring-tasks

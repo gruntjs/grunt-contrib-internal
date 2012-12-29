@@ -11,7 +11,7 @@ npm install {%= name %} --save-dev
 ```
 
 [grunt]: http://gruntjs.com/
-[Getting Started]: https://github.com/gruntjs/grunt/blob/devel/docs/getting_started.md
+[Getting Started]: https://github.com/gruntjs/grunt/wiki/Getting-started
 
 {% _.each(docs, function(doc, name) { %}
 ## {%= _.capitalize(name) %} task
