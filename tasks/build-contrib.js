@@ -10,15 +10,6 @@
 
 module.exports = function(grunt) {
 
-  // Warn when properties have been removed.
-  function warn(obj, prop, fn) {
-    Object.defineProperty(obj, prop, {
-      get: function() {
-        grunt.log.errorlns(fn ? fn() : 'The "' + prop + '" property has been removed.');
-      }
-    });
-  }
-
   // Add custom template delimiters.
   grunt.template.addDelimiters('build-contrib', '{%', '%}');
 
@@ -40,23 +31,20 @@ module.exports = function(grunt) {
     // Used to display the "in development" warning message @ the top.
     meta.in_development = (meta.keywords || []).indexOf('gruntplugin') === -1 || '';
 
-    // Commonly (?) used strings.
-    meta.s = grunt.file.readYAML(asset('strings.yml'));
-    warn(meta.s, 'multi_task_options', function() {
-      return 'Note: s.multi_task_options (options) has been removed in favor of the more general s.multi_task (overview).';
-    });
-
-    // Read task docs.
-    meta.docs = {};
+    // Read plugin/task docs.
+    meta.docs = {plugin: {}, task: {}};
     grunt.file.expand('docs/*.md').forEach(function(filepath) {
       // Parse out the task name and section name.
       var basename = path.basename(filepath, '.md');
       var parts = basename.split('-');
       var section = parts.pop();
       var taskname = parts.join('-');
-      if (!taskname) { return; }
 
-      if (!meta.docs[taskname]) { meta.docs[taskname] = {}; }
+      var namespace = taskname ? meta.docs.task : meta.docs.plugin;
+      if (taskname) {
+        if (!namespace[taskname]) { namespace[taskname] = {}; }
+        namespace = namespace[taskname];
+      }
 
       // Read doc file.
       var doc = grunt.file.read(filepath);
@@ -64,7 +52,7 @@ module.exports = function(grunt) {
       doc = doc.replace(/^#/gm, '###');
       // Process as template.
       doc = grunt.template.process(doc, {data: meta, delimiters: 'build-contrib'});
-      meta.docs[taskname][section] = doc;
+      namespace[section] = doc;
     });
 
     // Generate readme.

@@ -2,18 +2,20 @@
 
 > {%= description %}
 
-{%= in_development && s.in_development %}
+{% if (in_development) { %}
+_Note that this is not an official Grunt plugin release! If you want to use it in a project, please be sure to follow the instructions outlined in the [Installing Grunt](http://gruntjs.com/installing-grunt) guide._
+{% } %}
+
 ## Getting Started
-If you haven't used [grunt][] before, be sure to check out the [Getting Started][] guide, as it explains how to create a [gruntfile][Getting Started] as well as install and use grunt plugins. Once you're familiar with that process, install this plugin with this command:
+If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
 ```shell
 npm install {%= name %} --save-dev
 ```
 
-[grunt]: http://gruntjs.com/
-[Getting Started]: http://gruntjs.com/getting-started
+{%= docs.plugin.overview || '' %}
 
-{% _.each(docs, function(doc, name) { %}
+{% _.each(docs.task, function(doc, name) { %}
 ## {%= _.capitalize(name) %} task
 _Run this task with the `grunt {%= name %}` command._
 
