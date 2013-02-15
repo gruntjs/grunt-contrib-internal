@@ -3,7 +3,7 @@
 > {%= description %}
 
 {% if (in_development) { %}
-_Note that this is not an official Grunt plugin release! If you want to use it in a project, please be sure to follow the instructions outlined in the [Installing Grunt](http://gruntjs.com/installing-grunt) guide._
+_Note that this is not an official Grunt plugin release! If you want to use this in a project, please be sure to follow the instructions for installing development versions, as outlined in the [Installing Grunt](http://gruntjs.com/installing-grunt) guide._
 {% } %}
 
 ## Getting Started
