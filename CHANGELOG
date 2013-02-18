@@ -1,3 +1,7 @@
+v0.4.1:
+  date: 2013-02-17
+  changes:
+    - Adding support for npm peerDependencies.
 v0.1.0:
   date: 2012-10-03
   changes:
