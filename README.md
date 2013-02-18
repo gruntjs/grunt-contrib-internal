@@ -15,19 +15,19 @@ If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out th
 npm install grunt-contrib-internal --save-dev
 ```
 
+One the plugin has been installed, it may be enabled inside your Gruntfile with this line of JavaScript:
 
-
-
-## Build-contrib task
-_Run this task with the `grunt build-contrib` command._
+```js
+grunt.loadNpmTasks('grunt-contrib-internal');
+```
 
 _This plugin is used internally by grunt-contrib plugins, and shouldn't be used externally._
 
 
 
-
 ## Release History
 
+ * 2013-02-16   v0.4.2   Moving overview text to the correct file. Mentioned grunt.loadNpmTasks in readme.
  * 2013-02-16   v0.4.1   Adding support for npm peerDependencies.
  * 2012-10-02   v0.1.0   Work in progress, not yet officially released.
 
@@ -35,4 +35,4 @@ _This plugin is used internally by grunt-contrib plugins, and shouldn't be used 
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com/)
 
-*This file was generated on Sun Feb 17 2013 22:05:09.*
+*This file was generated on Sun Feb 17 2013 22:32:44.*
