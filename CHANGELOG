@@ -1,3 +1,7 @@
+v0.4.3:
+  date: 2013-02-20
+  changes:
+    - Fix typo in readme template.
 v0.4.2:
   date: 2013-02-17
   changes:
