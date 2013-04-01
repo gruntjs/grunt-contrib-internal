@@ -1,3 +1,7 @@
+v0.4.4:
+  date: 2013-04-01
+  changes:
+    - Changelog date timezone is localized.
 v0.4.3:
   date: 2013-02-20
   changes:
