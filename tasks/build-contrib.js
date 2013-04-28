@@ -21,6 +21,9 @@ module.exports = function(grunt) {
     meta.changelog = grunt.file.readYAML('CHANGELOG');
 
     meta.travis = grunt.file.exists('.travis.yml');
+    if (meta.travis) {
+      meta.travis = meta.repository.url.replace(/.*:\/\/github.com\/(.*)\.git/, 'https://travis-ci.org/$1');
+    }
 
     var authors = grunt.file.read('AUTHORS');
     meta.authors = authors.split('\n').map(function(author) {
