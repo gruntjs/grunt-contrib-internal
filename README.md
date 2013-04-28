@@ -27,6 +27,7 @@ _This plugin is used internally by grunt-contrib plugins, and shouldn't be used 
 
 ## Release History
 
+ * 2013-04-28   v0.4.5   Get travis url from package.json
  * 2013-04-01   v0.4.4   Changelog date timezone is localized.
  * 2013-02-20   v0.4.3   Fix typo in readme template.
  * 2013-02-17   v0.4.2   Moving overview text to the correct file. Mentioned grunt.loadNpmTasks in readme.
@@ -37,4 +38,4 @@ _This plugin is used internally by grunt-contrib plugins, and shouldn't be used 
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com/)
 
-*This file was generated on Mon Apr 01 2013 11:22:36.*
+*This file was generated on Sun Apr 28 2013 12:36:55.*
