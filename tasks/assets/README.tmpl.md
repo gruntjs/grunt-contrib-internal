@@ -1,4 +1,4 @@
-# {%= name %}{% if (travis) { %} [![Build Status](https://secure.travis-ci.org/gruntjs/{%= name %}.png?branch=master)](http://travis-ci.org/gruntjs/{%= name %}){% } %}
+# {%= name %}{% if (travis) { %} [![Build Status]({%= travis %}.png?branch=master)]({%= travis %}){% } %}
 
 > {%= description %}
 
