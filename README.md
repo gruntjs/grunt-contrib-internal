@@ -1,4 +1,4 @@
-# grunt-contrib-internal v0.4.5
+# grunt-contrib-internal v0.4.6
 
 > Internal tasks for managing the grunt-contrib project.
 
@@ -27,6 +27,7 @@ _This plugin is used internally by grunt-contrib plugins, and shouldn't be used 
 
 ## Release History
 
+ * 2013-08-16   v0.4.6   Display current version of plugins in README.
  * 2013-04-28   v0.4.5   Get travis url from package.json
  * 2013-04-01   v0.4.4   Changelog date timezone is localized.
  * 2013-02-20   v0.4.3   Fix typo in readme template.
@@ -38,4 +39,4 @@ _This plugin is used internally by grunt-contrib plugins, and shouldn't be used 
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com/)
 
-*This file was generated on Fri Aug 16 2013 09:57:35.*
+*This file was generated on Fri Aug 16 2013 10:02:44.*
