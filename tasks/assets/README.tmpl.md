@@ -1,4 +1,4 @@
-# {%= name %}{% if (travis) { %} [![Build Status]({%= travis %}.png?branch=master)]({%= travis %}){% } %}
+# {%= name %} v{%= version %}{% if (travis) { %} [![Build Status]({%= travis %}.png?branch=master)]({%= travis %}){% } %}
 
 > {%= description %}
 
