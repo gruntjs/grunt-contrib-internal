@@ -20,7 +20,6 @@
       "url": "https://github.com/gruntjs/grunt-contrib-internal/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "Gruntfile.js",
   "engines": {
     "node": ">= 0.8.0"
   },
@@ -34,6 +33,5 @@
   "peerDependencies": {
     "grunt": "~0.4.0"
   },
-  "keywords": [
-  ]
+  "keywords": []
 }
