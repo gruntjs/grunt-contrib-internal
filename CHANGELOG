@@ -1,3 +1,7 @@
+v0.4.7:
+  date: 2014-02-18
+  changes:
+    - Update repository parsing. Adds official npm parsing lib.
 v0.4.6:
   date: 2013-08-16
   changes:
