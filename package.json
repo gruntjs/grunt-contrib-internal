@@ -1,7 +1,7 @@
 {
   "name": "grunt-contrib-internal",
   "description": "Internal tasks for managing the grunt-contrib project.",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "homepage": "https://github.com/gruntjs/grunt-contrib-internal",
   "author": {
     "name": "Grunt Team",
@@ -33,5 +33,8 @@
   "peerDependencies": {
     "grunt": "~0.4.0"
   },
-  "keywords": []
+  "keywords": [],
+  "dependencies": {
+    "read-package-json": "~1.1.7"
+  }
 }
