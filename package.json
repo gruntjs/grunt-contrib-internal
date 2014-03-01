@@ -26,6 +26,9 @@
   "scripts": {
     "test": "grunt test"
   },
+  "dependencies": {
+    "read-package-json": "~1.1.7"
+  },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.1.1",
     "grunt": "~0.4.0"
@@ -34,7 +37,8 @@
     "grunt": "~0.4.0"
   },
   "keywords": [],
-  "dependencies": {
-    "read-package-json": "~1.1.7"
-  }
+  "files": [
+    "tasks",
+    "LICENSE-MIT"
+  ]
 }
