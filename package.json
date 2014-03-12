@@ -39,6 +39,7 @@
   "keywords": [],
   "files": [
     "tasks",
-    "LICENSE-MIT"
+    "LICENSE-MIT",
+    "CONTRIBUTING.md"
   ]
 }

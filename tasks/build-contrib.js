@@ -88,8 +88,8 @@ module.exports = function(grunt) {
         grunt.log.ok('Keeping README.md.');
       }
 
-      // Copy contributing guide from grunt.
-      grunt.file.copy('node_modules/grunt/CONTRIBUTING.md', 'CONTRIBUTING.md');
+      // Copy contributing guide
+      grunt.file.copy(path.resolve(__dirname, '..', 'CONTRIBUTING.md'), 'CONTRIBUTING.md');
       grunt.log.ok('Created CONTRIBUTING.md');
 
       // Fail task if any errors were logged.
