@@ -1,3 +1,7 @@
+v0.4.8:
+  date: 2014-03-12
+  changes:
+    - Copy CONTRIBUTING.md from itself rather than grunt.
 v0.4.7:
   date: 2014-02-18
   changes:

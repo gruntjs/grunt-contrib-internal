@@ -1,4 +1,4 @@
-# grunt-contrib-internal v0.4.7
+# grunt-contrib-internal v0.4.8
 
 > Internal tasks for managing the grunt-contrib project.
 
@@ -27,6 +27,7 @@ _This plugin is used internally by grunt-contrib plugins, and shouldn't be used 
 
 ## Release History
 
+ * 2014-03-12   v0.4.8   Copy CONTRIBUTING.md from itself rather than grunt.
  * 2014-02-18   v0.4.7   Update repository parsing. Adds official npm parsing lib.
  * 2013-08-16   v0.4.6   Display current version of plugins in README.
  * 2013-04-28   v0.4.5   Get travis url from package.json
@@ -40,4 +41,4 @@ _This plugin is used internally by grunt-contrib plugins, and shouldn't be used 
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com/)
 
-*This file was generated on Tue Feb 18 2014 22:50:24.*
+*This file was generated on Wed Mar 12 2014 10:15:43.*
