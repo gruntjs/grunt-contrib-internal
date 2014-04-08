@@ -41,6 +41,13 @@ module.exports = function(grunt) {
           .replace('.git', '');
       }
 
+      meta.appveyor = grunt.file.exists('appveyor.yml') ? grunt.file.readYAML('appveyor.yml') : null;
+
+      if (meta.appveyor && meta.appveyor.project_id) {
+        var pid = meta.appveyor.project_id;
+        meta.appveyor = 'https://ci.appveyor.com/api/projects/status/' + pid + '/branch/master';
+      }
+
       var authors = grunt.file.read('AUTHORS');
       meta.authors = authors.split('\n').map(function(author) {
         var matches = author.match(/(.*?)\s*\((.*)\)/) || [];
