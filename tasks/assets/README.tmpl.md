@@ -1,4 +1,5 @@
-# {%= name %} v{%= version %}{% if (travis) { %} [![Build Status: Linux]({%= travis %}.png?branch=master)]({%= travis %}){% } %}{% if (appveyor) { %} <a href="https://ci.appveyor.com/project/gruntjs/{%= name %}"><img src="{%= appveyor %}" alt="Build Status: Windows" height="18" /></a>{% } %}
+# {%= name %} v{%= version %}
+[![NPM version](https://badge.fury.io/js/{%= name %}.svg)](http://badge.fury.io/js/{%= name %}){% if (travis) { %} [![Build Status]({%= travis %}.svg?branch=master)]({%= travis %}){% } %}{% if (appveyor) { %} [![Build Status: Windows]({%= appveyor %})](https://ci.appveyor.com/project/gruntjs/{%= name %}){% } %} [![Dependency Status](https://david-dm.org/gruntjs/grunt-contrib-internal.svg)](https://david-dm.org/gruntjs/grunt-contrib-internal) [![devDependency Status](https://david-dm.org/gruntjs/grunt-contrib-internal/dev-status.svg)](https://david-dm.org/gruntjs/grunt-contrib-internal#info=devDependencies) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 > {%= description %}
 

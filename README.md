@@ -1,4 +1,5 @@
 # grunt-contrib-internal v0.4.9
+[![NPM version](https://badge.fury.io/js/grunt-contrib-internal.svg)](http://badge.fury.io/js/grunt-contrib-internal) [![Dependency Status](https://david-dm.org/gruntjs/grunt-contrib-internal.svg)](https://david-dm.org/gruntjs/grunt-contrib-internal) [![devDependency Status](https://david-dm.org/gruntjs/grunt-contrib-internal/dev-status.svg)](https://david-dm.org/gruntjs/grunt-contrib-internal#info=devDependencies) [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
 
 > Internal tasks for managing the grunt-contrib project.
 
@@ -42,4 +43,4 @@ _This plugin is used internally by grunt-contrib plugins, and shouldn't be used 
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com/)
 
-*This file was generated on Tue Apr 08 2014 16:03:00.*
+*This file was generated on Tue Apr 08 2014 17:58:16.*
