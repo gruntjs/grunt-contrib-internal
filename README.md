@@ -1,4 +1,4 @@
-# grunt-contrib-internal v0.4.9
+# grunt-contrib-internal v0.4.10
 
 > Internal tasks for managing the grunt-contrib project.
 
@@ -27,6 +27,7 @@ _This plugin is used internally by grunt-contrib plugins, and shouldn't be used 
 
 ## Release History
 
+ * 2014-05-05   v0.4.10   Lock dependency for 0.8.
  * 2014-04-08   v0.4.9   Add AppVeyor badges.
  * 2014-03-12   v0.4.8   Copy CONTRIBUTING.md from itself rather than grunt.
  * 2014-02-18   v0.4.7   Update repository parsing. Adds official npm parsing lib.
@@ -42,4 +43,4 @@ _This plugin is used internally by grunt-contrib plugins, and shouldn't be used 
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com/)
 
-*This file was generated on Tue Apr 08 2014 16:03:00.*
+*This file was generated on Mon May 05 2014 01:54:24.*
