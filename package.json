@@ -27,7 +27,7 @@
     "test": "grunt test"
   },
   "dependencies": {
-    "read-package-json": "~1.1.7"
+    "read-package-json": "1.1.7"
   },
   "devDependencies": {
     "grunt-contrib-jshint": "~0.10.0",
