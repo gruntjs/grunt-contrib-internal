@@ -31,5 +31,6 @@ module.exports = function(grunt) {
 
   // By default, lint task.
   grunt.registerTask('default', ['jshint', 'build-contrib']);
+  grunt.registerTask('test', ['default']);
 
 };
