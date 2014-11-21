@@ -1,4 +1,4 @@
-# {%= name %} v{%= version %}{% if (travis) { %} [![Build Status: Linux]({%= travis %}.png?branch=master)]({%= travis %}){% } %}{% if (appveyor) { %} <a href="https://ci.appveyor.com/project/gruntjs/{%= name %}"><img src="{%= appveyor %}" alt="Build Status: Windows" height="18" /></a>{% } %}
+# {%= name %} v{%= version %}{% if (travis) { %} [![Build Status: Linux]({%= travis %}.svg?branch=master)]({%= travis %}){% } %}{% if (appveyor) { %} [![Build Status: Windows]({%= appveyor %})](https://ci.appveyor.com/project/gruntjs/{%= name %}/branch/master){% } %}
 
 > {%= description %}
 
