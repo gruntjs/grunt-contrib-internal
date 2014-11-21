@@ -21,13 +21,13 @@
     }
   ],
   "engines": {
-    "node": ">= 0.8.0"
+    "node": ">= 0.10.0"
   },
   "scripts": {
     "test": "grunt test"
   },
   "dependencies": {
-    "read-package-json": "1.2.7"
+    "read-package-json": "~1.2.7"
   },
   "devDependencies": {
     "grunt": "~0.4.5",
