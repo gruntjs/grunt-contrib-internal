@@ -1,4 +1,4 @@
-# grunt-contrib-internal v0.4.10
+# grunt-contrib-internal v0.4.11
 
 > Internal tasks for managing the grunt-contrib project.
 
@@ -7,7 +7,7 @@ _Note that this is not an official Grunt plugin release! If you want to use this
 
 
 ## Getting Started
-This plugin requires Grunt `~0.4.0`
+This plugin requires Grunt `~0.4.5`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
@@ -27,6 +27,7 @@ _This plugin is used internally by grunt-contrib plugins, and shouldn't be used 
 
 ## Release History
 
+ * 2014-11-22   v0.4.11   Use SVG badges.
  * 2014-05-05   v0.4.10   Lock dependency for 0.8.
  * 2014-04-08   v0.4.9   Add AppVeyor badges.
  * 2014-03-12   v0.4.8   Copy CONTRIBUTING.md from itself rather than grunt.
@@ -43,4 +44,4 @@ _This plugin is used internally by grunt-contrib plugins, and shouldn't be used 
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com/)
 
-*This file was generated on Mon May 05 2014 01:54:24.*
+*This file was generated on Sat Nov 22 2014 01:08:01.*
