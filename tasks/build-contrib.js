@@ -45,7 +45,7 @@ module.exports = function(grunt) {
 
       if (meta.appveyor && meta.appveyor.project_id) {
         var pid = meta.appveyor.project_id;
-        meta.appveyor = 'https://ci.appveyor.com/api/projects/status/' + pid + '/branch/master';
+        meta.appveyor = 'https://ci.appveyor.com/api/projects/status/' + pid + '/branch/master?svg=true';
       }
 
       var authors = grunt.file.read('AUTHORS');
