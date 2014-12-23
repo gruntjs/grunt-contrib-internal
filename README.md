@@ -1,4 +1,4 @@
-# grunt-contrib-internal v0.4.11
+# grunt-contrib-internal v0.4.12
 
 > Internal tasks for managing the grunt-contrib project.
 
@@ -44,4 +44,4 @@ _This plugin is used internally by grunt-contrib plugins, and shouldn't be used 
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com/)
 
-*This file was generated on Sat Nov 22 2014 01:08:01.*
+*This file was generated on Tue Dec 23 2014 14:24:05.*
