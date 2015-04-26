@@ -23,7 +23,7 @@ module.exports = function(grunt) {
 
     readJson('package.json', console.error, false, function (err, data) {
       if (err) {
-        console.error("There was an error reading the file");
+        console.error('There was an error reading the file');
         done(false);
       }
 
@@ -67,7 +67,9 @@ module.exports = function(grunt) {
 
         var namespace = taskname ? meta.docs.task : meta.docs.plugin;
         if (taskname) {
-          if (!namespace[taskname]) { namespace[taskname] = {}; }
+          if (!namespace[taskname]) {
+            namespace[taskname] = {};
+          }
           namespace = namespace[taskname];
         }
 
@@ -99,7 +101,9 @@ module.exports = function(grunt) {
       grunt.log.ok('Created CONTRIBUTING.md');
 
       // Fail task if any errors were logged.
-      if (self.errorCount > 0) { done(false); }
+      if (self.errorCount > 0) {
+        done(false);
+      }
       done();
     });
 
