@@ -1,19 +1,12 @@
 {
   "name": "grunt-contrib-internal",
-  "description": "Internal tasks for managing the grunt-contrib project.",
+  "description": "Internal tasks for managing the grunt-contrib projects",
   "version": "0.4.12",
-  "homepage": "https://github.com/gruntjs/grunt-contrib-internal",
   "author": {
     "name": "Grunt Team",
     "url": "http://gruntjs.com/"
   },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/gruntjs/grunt-contrib-internal.git"
-  },
-  "bugs": {
-    "url": "https://github.com/gruntjs/grunt-contrib-internal/issues"
-  },
+  "repository": "gruntjs/grunt-contrib-internal",
   "licenses": [
     {
       "type": "MIT",
@@ -21,7 +14,7 @@
     }
   ],
   "engines": {
-    "node": ">= 0.10.0"
+    "node": ">=0.10.0"
   },
   "scripts": {
     "test": "grunt test"
