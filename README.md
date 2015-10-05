@@ -1,6 +1,6 @@
-# grunt-contrib-internal v0.4.12
+# grunt-contrib-internal v0.4.13
 
-> Internal tasks for managing the grunt-contrib project.
+> Internal tasks for managing the grunt-contrib projects
 
 
 _Note that this is not an official Grunt plugin release! If you want to use this in a project, please be sure to follow the instructions for installing development versions, as outlined in the [Installing Grunt](http://gruntjs.com/installing-grunt) guide._
@@ -27,6 +27,7 @@ _This plugin is used internally by grunt-contrib plugins, and shouldn't be used 
 
 ## Release History
 
+ * 2014-11-22   v0.4.13   various minor fixes.
  * 2014-11-22   v0.4.11   Use SVG badges.
  * 2014-05-05   v0.4.10   Lock dependency for 0.8.
  * 2014-04-08   v0.4.9   Add AppVeyor badges.
@@ -44,4 +45,4 @@ _This plugin is used internally by grunt-contrib plugins, and shouldn't be used 
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com/)
 
-*This file was generated on Thu Feb 26 2015 11:50:51.*
+*This file was generated on Mon Oct 05 2015 16:04:27.*
