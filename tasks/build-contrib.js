@@ -35,6 +35,7 @@ module.exports = function(grunt) {
         // create a valid Travis URL, based on [user/repository_name]
         meta.travis = 'https://travis-ci.org' + meta.repository.url
           .replace('github.com', '')
+          .replace('git+https://', '')
           .replace('git://', '')
           .replace('https://', '')
           .replace('http://', '')
