@@ -1,4 +1,4 @@
-# grunt-contrib-internal v0.4.13
+# grunt-contrib-internal v0.4.14
 
 > Internal tasks for managing the grunt-contrib projects
 
@@ -7,7 +7,6 @@ _Note that this is not an official Grunt plugin release! If you want to use this
 
 
 ## Getting Started
-This plugin requires Grunt `>=0.4.0`
 
 If you haven't used [Grunt](http://gruntjs.com/) before, be sure to check out the [Getting Started](http://gruntjs.com/getting-started) guide, as it explains how to create a [Gruntfile](http://gruntjs.com/sample-gruntfile) as well as install and use Grunt plugins. Once you're familiar with that process, you may install this plugin with this command:
 
@@ -45,4 +44,4 @@ _This plugin is used internally by grunt-contrib plugins, and shouldn't be used 
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com/)
 
-*This file was generated on Mon Oct 05 2015 16:04:27.*
+*This file was generated on Mon Feb 01 2016 10:51:00.*
