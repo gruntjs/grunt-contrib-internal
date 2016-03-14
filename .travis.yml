@@ -10,3 +10,6 @@ before_install:
   - if [ "$TRAVIS_NODE_VERSION" = "0.10" ]; then npm install -g npm@3; fi
 matrix:
   fast_finish: true
+cache:
+  directories:
+    - node_modules
