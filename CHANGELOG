@@ -1,7 +1,7 @@
 v0.4.13:
   date: 2014-11-22
   changes:
-    - various minor fixes.
+    - Various minor fixes.
 v0.4.11:
   date: 2014-11-22
   changes:
@@ -29,7 +29,7 @@ v0.4.6:
 v0.4.5:
   date: 2013-04-28
   changes:
-    - Get travis url from package.json
+    - Get Travis CI URL from package.json.
 v0.4.4:
   date: 2013-04-01
   changes:
@@ -42,7 +42,7 @@ v0.4.2:
   date: 2013-02-17
   changes:
     - Moving overview text to the correct file.
-    - Mentioned grunt.loadNpmTasks in readme.
+    - Mentioned `grunt.loadNpmTasks` in readme.
 v0.4.1:
   date: 2013-02-17
   changes:

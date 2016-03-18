@@ -26,17 +26,17 @@ _This plugin is used internally by grunt-contrib plugins, and shouldn't be used 
 
 ## Release History
 
- * 2014-11-22   v0.4.13   various minor fixes.
+ * 2014-11-22   v0.4.13   Various minor fixes.
  * 2014-11-22   v0.4.11   Use SVG badges.
  * 2014-05-05   v0.4.10   Lock dependency for 0.8.
  * 2014-04-08   v0.4.9   Add AppVeyor badges.
  * 2014-03-12   v0.4.8   Copy CONTRIBUTING.md from itself rather than grunt.
  * 2014-02-18   v0.4.7   Update repository parsing. Adds official npm parsing lib.
  * 2013-08-16   v0.4.6   Display current version of plugins in README.
- * 2013-04-28   v0.4.5   Get travis url from package.json
+ * 2013-04-28   v0.4.5   Get Travis CI URL from package.json.
  * 2013-04-01   v0.4.4   Changelog date timezone is localized.
  * 2013-02-20   v0.4.3   Fix typo in readme template.
- * 2013-02-17   v0.4.2   Moving overview text to the correct file. Mentioned grunt.loadNpmTasks in readme.
+ * 2013-02-17   v0.4.2   Moving overview text to the correct file. Mentioned `grunt.loadNpmTasks` in readme.
  * 2013-02-17   v0.4.1   Adding support for npm peerDependencies.
  * 2012-10-03   v0.1.0   Work in progress, not yet officially released.
 
@@ -44,4 +44,4 @@ _This plugin is used internally by grunt-contrib plugins, and shouldn't be used 
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com/)
 
-*This file was generated on Fri Mar 18 2016 13:18:27.*
+*This file was generated on Fri Mar 18 2016 18:43:14.*
