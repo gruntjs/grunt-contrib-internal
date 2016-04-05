@@ -27,6 +27,8 @@
   "keywords": [],
   "files": [
     "tasks",
+    ".travis.yml",
+    "appveyor.yml",
     "LICENSE-MIT",
     "CONTRIBUTING.md"
   ],
