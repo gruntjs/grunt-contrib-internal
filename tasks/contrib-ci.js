@@ -11,7 +11,7 @@
 module.exports = function(grunt) {
   var path = require('path');
   grunt.registerTask('contrib-ci', 'Normalizes AppVeyor and Travis CI configs.', function(skipIfExists) {
-    skipIfExists = skipIfExists === true;
+    skipIfExists = skipIfExists === "skipIfExists";
     var travis = grunt.file.read(path.join(__dirname, '..', '.travis.yml'));
     var appveyor = grunt.file.read(path.join(__dirname, '..', 'appveyor.yml'));
     var taskTravis = path.join(process.cwd(), '.travis.yml');
