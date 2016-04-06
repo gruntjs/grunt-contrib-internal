@@ -1,3 +1,7 @@
+v1.0.1:
+  date: 2016-04-06
+  changes:
+    - Include missing files from the npm package.
 v1.0.0:
   date: 2016-04-04
   changes:
