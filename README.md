@@ -22,6 +22,15 @@ grunt.loadNpmTasks('grunt-contrib-internal');
 
 _This plugin is used internally by grunt-contrib plugins, and shouldn't be used externally._
 
+##### Skipping Existing CI Configs If They Exist
+
+If you have needed customizations to the `.travis.yml` or `appveyor.yml` files,
+use the following to skip normalizing those files if they exist:
+
+```js
+grunt.registerTask('default', ['jshint', 'contrib-core', 'contrib-ci:skipIfExists']);
+```
+
 
 
 ## Release History
@@ -46,4 +55,4 @@ _This plugin is used internally by grunt-contrib plugins, and shouldn't be used 
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com/)
 
-*This file was generated on Wed Apr 06 2016 03:37:56.*
+*This file was generated on Tue Apr 05 2016 18:16:05.*
