@@ -1,3 +1,8 @@
+v1.1.0:
+  date: 2016-04-06
+  changes:
+    - Fix "skipIfExists" argument to contrib-ci.
+    - Break out tasks into separate files.
 v1.0.1:
   date: 2016-04-06
   changes:
