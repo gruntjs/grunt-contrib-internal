@@ -1,5 +1,3 @@
-# http://www.appveyor.com/docs/appveyor-yml
-
 clone_depth: 10
 
 version: "{build}"
