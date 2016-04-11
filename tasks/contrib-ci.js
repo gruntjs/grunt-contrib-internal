@@ -18,16 +18,14 @@ module.exports = function(grunt) {
     var taskTravis = path.join(process.cwd(), '.travis.yml');
     var taskAppveyor = path.join(process.cwd(), 'appveyor.yml');
 
-    if (!skipIfExists) {
-      if (!grunt.file.exists(taskTravis)) {
-        grunt.file.write(taskTravis, travis);
-      }
-
-      if (!grunt.file.exists(taskAppveyor)) {
-        grunt.file.write(taskAppveyor, appveyor);
-      }
-      grunt.log.ok('Normalized .travis.yml and appveyor.yml for grunt-contrib.');
+    if (!skipIfExists || !grunt.file.exists(taskTravis)) {
+      grunt.file.write(taskTravis, travis);
     }
+    if (!skipIfExists || !grunt.file.exists(taskAppveyor)) {
+      grunt.file.write(taskAppveyor, appveyor);
+    }
+
+    grunt.log.ok('Normalized .travis.yml and appveyor.yml for grunt-contrib.');
 
   });
 };

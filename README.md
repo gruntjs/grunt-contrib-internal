@@ -1,4 +1,4 @@
-# grunt-contrib-internal v1.1.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-internal.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-internal) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/vhmcvnnnmou73wq8/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-internal/branch/master)
+# grunt-contrib-internal v1.2.1 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-internal.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-internal) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/vhmcvnnnmou73wq8/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-internal/branch/master)
 
 > Internal tasks for managing the grunt-contrib projects
 
@@ -56,4 +56,4 @@ grunt.registerTask('default', ['jshint', 'contrib-core', 'contrib-ci:skipIfExist
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com/)
 
-*This file was generated on Tue Apr 05 2016 18:17:54.*
+*This file was generated on Thu Apr 14 2016 09:23:15.*
