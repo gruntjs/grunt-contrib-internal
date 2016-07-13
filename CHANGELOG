@@ -1,3 +1,11 @@
+v1.2.2:
+  date: 2016-07-13
+  changes:
+    - Add Node.js 6 in CI configs.
+v1.2.1:
+  date: 2016-04-14
+  changes:
+    - Fix CI normalization regression.
 v1.1.0:
   date: 2016-04-06
   changes:
