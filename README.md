@@ -1,4 +1,4 @@
-# grunt-contrib-internal v1.2.3 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-internal.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-internal) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/vhmcvnnnmou73wq8/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-internal/branch/master)
+# grunt-contrib-internal v1.3.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-internal.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-internal) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/vhmcvnnnmou73wq8/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-internal/branch/master)
 
 > Internal tasks for managing the grunt-contrib projects
 
@@ -35,7 +35,8 @@ grunt.registerTask('default', ['jshint', 'contrib-core', 'contrib-ci:skipIfExist
 
 ## Release History
 
- * 2016-11-23   v1.2.3   [object Object]
+ * 2017-06-10   v1.3.0   Update CI configs; add Node.js 8, remove 7.
+ * 2016-11-23   v1.2.3   Update CI configs; add Node.js 7, remove 0.12, 5 and iojs.
  * 2016-07-13   v1.2.2   Add Node.js 6 in CI configs.
  * 2016-04-14   v1.2.1   Fix CI normalization regression.
  * 2016-04-06   v1.1.0   Fix "skipIfExists" argument to contrib-ci. Break out tasks into separate files.
@@ -59,4 +60,4 @@ grunt.registerTask('default', ['jshint', 'contrib-core', 'contrib-ci:skipIfExist
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com/)
 
-*This file was generated on Wed Nov 23 2016 23:34:18.*
+*This file was generated on Sat Jun 10 2017 01:17:38.*

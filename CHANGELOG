@@ -1,7 +1,11 @@
+v1.3.0:
+  date: 2017-06-10
+  changes:
+    - Update CI configs; add Node.js 8, remove 7.
 v1.2.3:
   date: 2016-11-23
   changes:
-    - Update CI configs: add Node.js 7, remove 0.12, 5 and iojs.
+    - Update CI configs; add Node.js 7, remove 0.12, 5 and iojs.
 v1.2.2:
   date: 2016-07-13
   changes:
