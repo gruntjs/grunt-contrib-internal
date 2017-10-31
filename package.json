@@ -1,7 +1,7 @@
 {
   "name": "grunt-contrib-internal",
   "description": "Internal tasks for managing the grunt-contrib projects",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "author": {
     "name": "Grunt Team",
     "url": "http://gruntjs.com/"
@@ -9,7 +9,7 @@
   "repository": "gruntjs/grunt-contrib-internal",
   "license": "MIT",
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=4"
   },
   "scripts": {
     "test": "grunt test"
