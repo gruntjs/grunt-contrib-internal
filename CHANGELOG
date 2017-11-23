@@ -1,3 +1,11 @@
+v1.4.2:
+  date: 2017-11-23
+  changes:
+    - Update CI configs; add Node.js 9.
+v1.4.1:
+  date: 2017-10-31
+  changes:
+    - Update CI configs; remove Node.js 0.10.
 v1.3.0:
   date: 2017-06-10
   changes:

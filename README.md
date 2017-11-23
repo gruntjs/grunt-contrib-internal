@@ -1,4 +1,4 @@
-# grunt-contrib-internal v1.4.1 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-internal.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-internal) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/vhmcvnnnmou73wq8/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-internal/branch/master)
+# grunt-contrib-internal v1.4.2 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-internal.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-internal) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/vhmcvnnnmou73wq8/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-internal/branch/master)
 
 > Internal tasks for managing the grunt-contrib projects
 
@@ -35,6 +35,8 @@ grunt.registerTask('default', ['jshint', 'contrib-core', 'contrib-ci:skipIfExist
 
 ## Release History
 
+ * 2017-11-23   v1.4.2   Update CI configs; add Node.js 9.
+ * 2017-10-31   v1.4.1   Update CI configs; remove Node.js 0.10.
  * 2017-06-10   v1.3.0   Update CI configs; add Node.js 8, remove 7.
  * 2016-11-23   v1.2.3   Update CI configs; add Node.js 7, remove 0.12, 5 and iojs.
  * 2016-07-13   v1.2.2   Add Node.js 6 in CI configs.
@@ -60,4 +62,4 @@ grunt.registerTask('default', ['jshint', 'contrib-core', 'contrib-ci:skipIfExist
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com/)
 
-*This file was generated on Tue Oct 31 2017 11:14:48.*
+*This file was generated on Thu Nov 23 2017 10:33:26.*
