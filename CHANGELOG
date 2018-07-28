@@ -1,7 +1,7 @@
 v2.0.0:
   date: 2017-11-26
   changes:
-    - Update major version since the node.js 0.10 removal is a breaking change.
+    - Update major version since the Node.js 0.10 removal is a breaking change.
 v1.4.2:
   date: 2017-11-23
   changes:
