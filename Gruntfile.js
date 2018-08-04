@@ -1,6 +1,6 @@
 /*
  * grunt-contrib-internal
- * http://gruntjs.com/
+ * https://gruntjs.com/
  *
  * Copyright (c) 2016 Tyler Kellen, contributors
  * Licensed under the MIT license.
