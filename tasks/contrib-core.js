@@ -6,67 +6,64 @@
  * Licensed under the MIT license.
  */
 
-'use strict';
-
 module.exports = function(grunt) {
-
   // Add custom template delimiters.
   grunt.template.addDelimiters('build-contrib', '{%', '%}');
 
   grunt.registerTask('contrib-core', 'Generate contrib plugin files.', function() {
-    var path = require('path');
-    var readJson = require('read-package-json');
+    const path = require('path');
+    const readJson = require('read-package-json');
 
-    var done = this.async();
-    var asset = path.join.bind(null, __dirname, 'assets');
-    var self = this;
+    const done = this.async();
+    const asset = path.join.bind(null, __dirname, 'assets');
+    const self = this;
 
-    readJson('package.json', console.error, false, function (err, data) {
+    readJson('package.json', console.error, false, (err, data) => {
       if (err) {
         console.error('There was an error reading the file');
         done(false);
       }
 
-      var meta = data;
+      const meta = data;
       meta.changelog = grunt.file.readYAML('CHANGELOG');
       meta.travis = grunt.file.exists('.travis.yml');
 
       if (meta.travis) {
-        // create a valid Travis URL, based on [user/repository_name]
-        meta.travis = 'https://travis-ci.org' + meta.repository.url
+        // Create a valid Travis URL, based on [user/repository_name]
+        meta.travis = `https://travis-ci.org${meta.repository.url
           .replace('github.com', '')
           .replace('git+https://', '')
           .replace('git://', '')
           .replace('https://', '')
           .replace('http://', '')
-          .replace('.git', '');
+          .replace('.git', '')}`;
       }
 
       meta.appveyor = null;
 
       if (meta.appveyor_id) {
-        meta.appveyor = 'https://ci.appveyor.com/api/projects/status/' + meta.appveyor_id + '/branch/master?svg=true';
+        meta.appveyor = `https://ci.appveyor.com/api/projects/status/${meta.appveyor_id}/branch/master?svg=true`;
       }
 
-      var authors = grunt.file.read('AUTHORS');
-      meta.authors = authors.split('\n').map(function(author) {
-        var matches = author.match(/(.*?)\s*\((.*)\)/) || [];
+      const authors = grunt.file.read('AUTHORS');
+      meta.authors = authors.split('\n').map(author => {
+        const matches = author.match(/(.*?)\s*\((.*)\)/) || [];
         return {name: matches[1], url: matches[2]};
       });
 
       // Used to display the "in development" warning message @ the top.
-      meta.in_development = (meta.keywords || []).indexOf('gruntplugin') === -1 || '';
+      meta.in_development = !(meta.keywords || []).includes('gruntplugin') || '';
 
       // Read plugin/task docs.
       meta.docs = {plugin: {}, task: {}};
-      grunt.file.expand('docs/*.md').forEach(function(filepath) {
+      grunt.file.expand('docs/*.md').forEach(filepath => {
         // Parse out the task name and section name.
-        var basename = path.basename(filepath, '.md');
-        var parts = basename.split('-');
-        var section = parts.pop();
-        var taskname = parts.join('-');
+        const basename = path.basename(filepath, '.md');
+        const parts = basename.split('-');
+        const section = parts.pop();
+        const taskname = parts.join('-');
 
-        var namespace = taskname ? meta.docs.task : meta.docs.plugin;
+        let namespace = taskname ? meta.docs.task : meta.docs.plugin;
         if (taskname) {
           if (!namespace[taskname]) {
             namespace[taskname] = {};
@@ -75,7 +72,7 @@ module.exports = function(grunt) {
         }
 
         // Read doc file.
-        var doc = grunt.file.read(filepath);
+        let doc = grunt.file.read(filepath);
         // Adjust header level to be semantically correct for the readme.
         doc = doc.replace(/^#/gm, '###');
         // Process as template.
@@ -84,12 +81,12 @@ module.exports = function(grunt) {
       });
 
       // Generate readme.
-      var tmpl = grunt.file.read(asset('README.tmpl.md'));
-      var newReadme = grunt.template.process(tmpl, {data: meta, delimiters: 'build-contrib'});
+      const tmpl = grunt.file.read(asset('README.tmpl.md'));
+      const newReadme = grunt.template.process(tmpl, {data: meta, delimiters: 'build-contrib'});
 
       // Only write readme if it actually changed.
-      var oldReadme = grunt.file.exists('README.md') ? grunt.file.read('README.md') : '';
-      var re = /(\*This file was generated on.*)/;
+      const oldReadme = grunt.file.exists('README.md') ? grunt.file.read('README.md') : '';
+      const re = /(\*This file was generated on.*)/;
       if (oldReadme.replace(re, '') !== newReadme.replace(re, '')) {
         grunt.file.write('README.md', newReadme);
         grunt.log.ok('Created README.md');
@@ -107,7 +104,5 @@ module.exports = function(grunt) {
       }
       done();
     });
-
   });
-
 };
