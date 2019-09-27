@@ -1,3 +1,9 @@
+v4.0.0:
+  date: 2019-09-27
+  changes:
+    - Drop Node.js 6.
+    - Add Node.js 12.
+    - Tweak CI configs.
 v3.1.0:
   date: 2018-07-28
   changes:
