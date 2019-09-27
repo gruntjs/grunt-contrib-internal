@@ -8,14 +8,14 @@
 
 'use strict';
 
+const path = require('path');
+const readJson = require('read-package-json');
+
 module.exports = function(grunt) {
   // Add custom template delimiters.
   grunt.template.addDelimiters('build-contrib', '{%', '%}');
 
   grunt.registerTask('contrib-core', 'Generate contrib plugin files.', function() {
-    const path = require('path');
-    const readJson = require('read-package-json');
-
     const done = this.async();
     const asset = path.join.bind(null, __dirname, 'assets');
     const self = this;
@@ -28,23 +28,17 @@ module.exports = function(grunt) {
 
       const meta = data;
       meta.changelog = grunt.file.readYAML('CHANGELOG');
-      meta.travis = grunt.file.exists('.travis.yml');
+      meta.ci = grunt.file.exists('.github/workflows/test.yml');
 
-      if (meta.travis) {
-        // Create a valid Travis URL, based on [user/repository_name]
-        meta.travis = `https://travis-ci.org${meta.repository.url
+      if (meta.ci) {
+        // Create a valid GitHub Actions CI URL, based on [user/repository_name]
+        meta.ci = `https://github.com${meta.repository.url
           .replace('github.com', '')
           .replace('git+https://', '')
           .replace('git://', '')
           .replace('https://', '')
           .replace('http://', '')
           .replace('.git', '')}`;
-      }
-
-      meta.appveyor = null;
-
-      if (meta.appveyor_id) {
-        meta.appveyor = `https://ci.appveyor.com/api/projects/status/${meta.appveyor_id}/branch/master?svg=true`;
       }
 
       const authors = grunt.file.read('AUTHORS');
