@@ -6,6 +6,8 @@
  * Licensed under the MIT license.
  */
 
+'use strict';
+
 module.exports = function(grunt) {
   grunt.registerTask('contrib-ci', 'Normalizes AppVeyor and Travis CI configs.', skipIfExists => {
     skipIfExists = skipIfExists === 'skipIfExists';

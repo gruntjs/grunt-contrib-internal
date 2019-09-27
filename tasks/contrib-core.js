@@ -6,6 +6,8 @@
  * Licensed under the MIT license.
  */
 
+'use strict';
+
 module.exports = function(grunt) {
   // Add custom template delimiters.
   grunt.template.addDelimiters('build-contrib', '{%', '%}');
