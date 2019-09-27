@@ -4,18 +4,18 @@ version: "{build}"
 
 environment:
   matrix:
-    - NODEJS_VERSION: "6"
+    - NODEJS_VERSION: "8"
       PLATFORM: x86
-    - NODEJS_VERSION: "6"
-      PLATFORM: x64
     - NODEJS_VERSION: "8"
       PLATFORM: x64
     - NODEJS_VERSION: "10"
       PLATFORM: x64
+    - NODEJS_VERSION: "12"
+      PLATFORM: x64
 
 install:
   - ps: Install-Product node $env:NODEJS_VERSION $env:PLATFORM
-  - npm install
+  - npm ci
 
 test_script:
   - node --version
@@ -31,4 +31,4 @@ matrix:
   fast_finish: true
 
 cache:
-  - 'node_modules -> appveyor.yml,package.json,package-lock.json'
+  - '%APPDATA%\npm-cache\ -> appveyor.yml,package.json,package-lock.json'
