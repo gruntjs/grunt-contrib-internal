@@ -1,3 +1,7 @@
+v4.0.1:
+  date: 2019-10-10
+  changes:
+    - Use esversion 6 instead of the deprecated esnext option.
 v4.0.0:
   date: 2019-09-27
   changes:

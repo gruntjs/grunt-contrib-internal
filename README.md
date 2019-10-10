@@ -1,4 +1,4 @@
-# grunt-contrib-internal v4.0.0 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-internal.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-internal) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/vhmcvnnnmou73wq8/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-internal/branch/master)
+# grunt-contrib-internal v4.0.1 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-internal.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-internal) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/vhmcvnnnmou73wq8/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-internal/branch/master)
 
 > Internal tasks for managing the grunt-contrib projects
 
@@ -35,6 +35,7 @@ grunt.registerTask('default', ['jshint', 'contrib-core', 'contrib-ci:skipIfExist
 
 ## Release History
 
+ * 2019-10-10   v4.0.1   Use esversion 6 instead of the deprecated esnext option.
  * 2019-09-27   v4.0.0   Drop Node.js 6. Add Node.js 12. Tweak CI configs.
  * 2018-07-28   v3.1.0   Add Node.js 10.
  * 2017-11-26   v2.0.0   Update major version since the Node.js 0.10 removal is a breaking change.
@@ -65,4 +66,4 @@ grunt.registerTask('default', ['jshint', 'contrib-core', 'contrib-ci:skipIfExist
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com/)
 
-*This file was generated on Fri Sep 27 2019 16:48:31.*
+*This file was generated on Thu Oct 10 2019 12:46:11.*
