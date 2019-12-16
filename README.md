@@ -1,4 +1,4 @@
-# grunt-contrib-internal v4.0.1 [![Build Status: Linux](https://travis-ci.org/gruntjs/grunt-contrib-internal.svg?branch=master)](https://travis-ci.org/gruntjs/grunt-contrib-internal) [![Build Status: Windows](https://ci.appveyor.com/api/projects/status/vhmcvnnnmou73wq8/branch/master?svg=true)](https://ci.appveyor.com/project/gruntjs/grunt-contrib-internal/branch/master)
+# grunt-contrib-internal v4.0.1 [![Build Status](https://github.com/gruntjs/grunt-contrib-internal/workflows/Tests/badge.svg)](https://github.com/gruntjs/grunt-contrib-internal/actions?workflow=Tests) %}
 
 > Internal tasks for managing the grunt-contrib projects
 
@@ -24,8 +24,8 @@ _This plugin is used internally by grunt-contrib plugins, and shouldn't be used 
 
 ##### Skipping Existing CI Configs If They Exist
 
-If you have needed customizations to the `.travis.yml` or `appveyor.yml` files,
-use the following to skip normalizing those files if they exist:
+If you have needed customizations to the `.github/workflows/test.yml` file,
+use the following to skip normalizing that file if it exists:
 
 ```js
 grunt.registerTask('default', ['jshint', 'contrib-core', 'contrib-ci:skipIfExists']);
@@ -66,4 +66,4 @@ grunt.registerTask('default', ['jshint', 'contrib-core', 'contrib-ci:skipIfExist
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com/)
 
-*This file was generated on Thu Oct 10 2019 12:46:11.*
+*This file was generated on Thu Oct 10 2019 12:47:40.*

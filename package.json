@@ -27,10 +27,8 @@
   "keywords": [],
   "files": [
     "tasks",
-    ".travis.yml",
-    "appveyor.yml",
+    ".github/workflows/test.yml",
     "LICENSE-MIT",
     "CONTRIBUTING.md"
-  ],
-  "appveyor_id": "vhmcvnnnmou73wq8"
+  ]
 }

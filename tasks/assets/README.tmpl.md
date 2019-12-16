@@ -1,4 +1,4 @@
-# {%= name %} v{%= version %}{% if (travis) { %} [![Build Status: Linux]({%= travis %}.svg?branch=master)]({%= travis %}){% } %}{% if (appveyor) { %} [![Build Status: Windows]({%= appveyor %})](https://ci.appveyor.com/project/gruntjs/{%= name %}/branch/master){% } %}
+# {%= name %} v{%= version %}{% if (ci) { %} [![Build Status]({%= ci %}/workflows/Tests/badge.svg)]({%= ci %}/actions?workflow=Tests){% } %} %}
 
 > {%= description %}
 
