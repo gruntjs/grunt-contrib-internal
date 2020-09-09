@@ -1,4 +1,4 @@
-# grunt-contrib-internal v5.0.0 [![Build Status](https://github.com/gruntjs/grunt-contrib-internal/workflows/Tests/badge.svg)](https://github.com/gruntjs/grunt-contrib-internal/actions?workflow=Tests)
+# grunt-contrib-internal v5.0.1 [![Build Status](https://github.com/gruntjs/grunt-contrib-internal/workflows/Tests/badge.svg)](https://github.com/gruntjs/grunt-contrib-internal/actions?workflow=Tests)
 
 > Internal tasks for managing the grunt-contrib projects
 
@@ -35,6 +35,7 @@ grunt.registerTask('default', ['jshint', 'contrib-core', 'contrib-ci:skipIfExist
 
 ## Release History
 
+ * 2020-09-09   v5.0.1   Update dependencies.
  * 2020-07-04   v5.0.0   Switch to GitHub Actions CI. Drop Node.js 8.x. Add Node.js 14.x. Update dependencies.
  * 2019-10-10   v4.0.1   Use esversion 6 instead of the deprecated esnext option.
  * 2019-09-27   v4.0.0   Drop Node.js 6. Add Node.js 12. Tweak CI configs.
@@ -67,4 +68,4 @@ grunt.registerTask('default', ['jshint', 'contrib-core', 'contrib-ci:skipIfExist
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com/)
 
-*This file was generated on Sat Jul 04 2020 23:30:47.*
+*This file was generated on Wed Sep 09 2020 16:12:24.*
