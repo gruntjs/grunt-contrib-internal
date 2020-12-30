@@ -1,3 +1,7 @@
+v5.0.2:
+  date: 2020-12-30
+  changes:
+    - Update CI config.
 v5.0.1:
   date: 2020-09-09
   changes:

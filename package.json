@@ -1,7 +1,7 @@
 {
   "name": "grunt-contrib-internal",
   "description": "Internal tasks for managing the grunt-contrib projects",
-  "version": "5.0.1",
+  "version": "5.0.2",
   "author": {
     "name": "Grunt Team",
     "url": "https://gruntjs.com/"
