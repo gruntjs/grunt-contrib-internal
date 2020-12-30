@@ -35,6 +35,7 @@ grunt.registerTask('default', ['jshint', 'contrib-core', 'contrib-ci:skipIfExist
 
 ## Release History
 
+ * 2020-12-30   v6.0.0   Update dependencies.
  * 2020-12-30   v5.0.2   Update CI config.
  * 2020-09-09   v5.0.1   Update dependencies.
  * 2020-07-04   v5.0.0   Switch to GitHub Actions CI. Drop Node.js 8.x. Add Node.js 14.x. Update dependencies.
@@ -69,4 +70,4 @@ grunt.registerTask('default', ['jshint', 'contrib-core', 'contrib-ci:skipIfExist
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com/)
 
-*This file was generated on Wed Dec 30 2020 15:55:57.*
+*This file was generated on Wed Dec 30 2020 15:59:43.*
