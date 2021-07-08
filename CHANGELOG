@@ -1,3 +1,8 @@
+v7.0.0:
+  date: 2021-07-08
+  changes:
+    - Update GitHub Actions config.
+    - Update dependencies.
 v6.0.1:
   date: 2021-02-15
   changes:
