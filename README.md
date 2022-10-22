@@ -73,4 +73,4 @@ grunt.registerTask('default', ['jshint', 'contrib-core', 'contrib-ci:skipIfExist
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com/)
 
-*This file was generated on Fri Oct 21 2022 21:42:31.*
+*This is a generated file.*
