@@ -1,4 +1,4 @@
-# grunt-contrib-internal v7.0.0 [![Build Status](https://github.com/gruntjs/grunt-contrib-internal/workflows/Tests/badge.svg)](https://github.com/gruntjs/grunt-contrib-internal/actions?workflow=Tests)
+# grunt-contrib-internal[![Build Status](https://github.com/gruntjs/grunt-contrib-internal/workflows/Tests/badge.svg)](https://github.com/gruntjs/grunt-contrib-internal/actions?workflow=Tests)
 
 > Internal tasks for managing the grunt-contrib projects
 
@@ -35,6 +35,7 @@ grunt.registerTask('default', ['jshint', 'contrib-core', 'contrib-ci:skipIfExist
 
 ## Release History
 
+ * 2022-10-21   v8.0.0   Drop node 12, test on node 18. Update dependencies.
  * 2021-07-08   v7.0.0   Update GitHub Actions config. Update dependencies.
  * 2021-02-15   v6.0.1   Update GitHub Actions config.
  * 2020-12-30   v6.0.0   Update dependencies.

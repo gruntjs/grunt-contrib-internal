@@ -9,7 +9,7 @@
   "repository": "gruntjs/grunt-contrib-internal",
   "license": "MIT",
   "engines": {
-    "node": ">=10"
+    "node": ">=14"
   },
   "scripts": {
     "test": "grunt test"
