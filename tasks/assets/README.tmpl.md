@@ -1,4 +1,4 @@
-# {%= name %} v{%= version %}{% if (ci) { %} [![Build Status]({%= ci %}/workflows/Tests/badge.svg)]({%= ci %}/actions?workflow=Tests){% } %}
+# {%= name %}{% if (ci) { %} [![Build Status]({%= ci %}/workflows/Tests/badge.svg)]({%= ci %}/actions?workflow=Tests){% } %}
 
 > {%= description %}
 
@@ -51,4 +51,4 @@ _(Nothing yet)_
 
 Task submitted by [{%= authors[0].name %}]({%= authors[0].url %})
 
-*This file was generated on {%= grunt.template.today() %}.*
+*This is a generated file.*
