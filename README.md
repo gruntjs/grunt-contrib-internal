@@ -1,4 +1,4 @@
-# grunt-contrib-internal[![Build Status](https://github.com/gruntjs/grunt-contrib-internal/workflows/Tests/badge.svg)](https://github.com/gruntjs/grunt-contrib-internal/actions?workflow=Tests)
+# grunt-contrib-internal v8.0.0 [![Build Status](https://github.com/gruntjs/grunt-contrib-internal/workflows/Tests/badge.svg)](https://github.com/gruntjs/grunt-contrib-internal/actions?workflow=Tests)
 
 > Internal tasks for managing the grunt-contrib projects
 
@@ -73,4 +73,4 @@ grunt.registerTask('default', ['jshint', 'contrib-core', 'contrib-ci:skipIfExist
 
 Task submitted by ["Cowboy" Ben Alman](http://benalman.com/)
 
-*This file was generated on Thu Jul 08 2021 18:09:15.*
+*This file was generated on Fri Oct 21 2022 21:35:46.*
