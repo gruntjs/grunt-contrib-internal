@@ -1,3 +1,8 @@
+v8.0.0:
+  date: 2022-10-21
+  changes:
+    - Drop node 12, test on node 18.
+    - Update dependencies.
 v7.0.0:
   date: 2021-07-08
   changes:
