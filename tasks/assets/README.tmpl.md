@@ -1,4 +1,4 @@
-# {%= name %}{% if (ci) { %} [![Build Status]({%= ci %}/workflows/Tests/badge.svg)]({%= ci %}/actions?workflow=Tests){% } %}
+# {%= name %} v{%= version %}{% if (ci) { %} [![Build Status]({%= ci %}/workflows/Tests/badge.svg)]({%= ci %}/actions?workflow=Tests){% } %}
 
 > {%= description %}
 
