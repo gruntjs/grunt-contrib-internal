@@ -14,6 +14,9 @@
   "scripts": {
     "test": "grunt test"
   },
+  "peerDependencies": {
+    "grunt": ">=0.4.0"
+  },
   "dependencies": {
     "read-package-json": "^6.0.0"
   },
