@@ -1,3 +1,8 @@
+v8.1.0:
+  date: 2023-04-30
+  changes:
+    - Add Node.js 20.
+    - Update dependencies.
 v8.0.0:
   date: 2022-10-21
   changes:

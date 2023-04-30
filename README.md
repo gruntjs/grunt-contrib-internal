@@ -35,6 +35,7 @@ grunt.registerTask('default', ['jshint', 'contrib-core', 'contrib-ci:skipIfExist
 
 ## Release History
 
+ * 2023-04-30   v8.1.0   Add Node.js 20. Update dependencies.
  * 2022-10-21   v8.0.0   Drop node 12, test on node 18. Update dependencies.
  * 2021-07-08   v7.0.0   Update GitHub Actions config. Update dependencies.
  * 2021-02-15   v6.0.1   Update GitHub Actions config.
