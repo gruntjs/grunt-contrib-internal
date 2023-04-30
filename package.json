@@ -18,10 +18,10 @@
     "grunt": ">=0.4.0"
   },
   "dependencies": {
-    "read-package-json": "^6.0.0"
+    "read-package-json": "^6.0.2"
   },
   "devDependencies": {
-    "grunt": "^1.5.3",
+    "grunt": "^1.6.1",
     "grunt-contrib-jshint": "^3.2.0"
   },
   "keywords": [],
